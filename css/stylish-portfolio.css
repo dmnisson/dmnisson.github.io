@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Stylish Portfolio v5.0.1 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
@@ -216,6 +216,12 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+#about h4 {
+  text-transform: uppercase;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
 .callout {
   padding: 15rem 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-callout.jpg");
@@ -230,6 +236,20 @@ h6 {
   font-weight: 700;
   display: block;
   max-width: 30rem;
+}
+
+.portfolio-item .caption .caption-content, .portfolio-item .caption .caption-content-black {
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content-black h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p, .portfolio-item .caption .caption-content-black p {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .portfolio-item {
@@ -255,17 +275,14 @@ h6 {
 
 .portfolio-item .caption .caption-content {
   color: #fff;
-  margin: auto 2rem 2rem;
 }
 
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
+.portfolio-item .caption .caption-content-black {
+  color: #000;
 }
 
-.portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
+.portfolio-item .caption .caption-content-black p {
+  font-weight: 450;
 }
 
 @media (min-width: 992px) {
@@ -278,7 +295,7 @@ h6 {
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
-  .portfolio-item .caption .caption-content {
+  .portfolio-item .caption .caption-content, .portfolio-item .caption .caption-content-black {
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
     margin-left: 5rem;
@@ -299,6 +316,22 @@ h6 {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+  .portfolio-item:hover .caption .caption-content-black {
+    color: #fff;
+  }
+}
+
+.modal-photo {
+  max-width: 100%;
+}
+
+.img-translucent {
+  opacity: 0.6;
+}
+
+.photo-credit {
+  font-size: 8pt;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer.footer {

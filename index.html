@@ -15,7 +15,7 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -72,7 +72,49 @@
             a new career in software development. David is working
             on full-stack projects for a diversity of applications and leveraging a variety of technologies.
             David's current projects are open-source and freely available.</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p class="lead mb-5">David seeks to build web-based and desktop applications that
+            are:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mx-auto">
+            <h4>Responsive</h4>
+            <p class="mb-5">
+            David's apps will work with laptops, tablets, or smartphones.
+            </p>
+          </div>
+          <div class="col-md-2 mx-auto">
+            <h4>Reliable</h4>
+            <p class="mb-5">
+            David's topmost priority is that his software can be counted upon to do its things
+            correctly.
+            </p>
+          </div>
+          <div class="col-md-2 mx-auto">
+            <h4>Fast</h4>
+            <p class="mb-5">
+            David doesn't like waiting for pages to load, and he doesn't want you to do the same.
+            </p>
+          </div>
+          <div class="col-md-3 mx-auto">
+            <h4>Intuitive</h4>
+            <p class="mb-5">
+            David likes his interfaces to be easy to use and understand, and so he will build
+            easy user interfaces for the software that he creates.
+            </p>
+          </div>
+          <div class="col-lg-10 mx-auto">
+            <p class="lead mb-5">David was a graduate student researcher in physics, and in the course of
+            his research wrote software for the University of California, Davis research groups to
+            fulfill the needs of the researchers. It was during one of these projects that he realized
+            his true passion for software development. Although this software belongs to UC Davis and is not publicly
+            available, David is currently working on a number of publicly available full-stack projects.
+            </p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">David's Projects</a>
           </div>
         </div>
       </div>
@@ -84,29 +126,45 @@
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Current Projects</h2>
+          <h2 class="mb-5">Open-Source Projects</h2>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://github.com/dmnisson/drivertracker">
+            <a class="portfolio-item" href="#driverTrackerModal" data-toggle="modal" data-target="#driverTrackerModal">
               <span class="caption">
-                <span class="caption-content">
+                <span class="caption-content-black">
                   <h2>DriverTracker</h2>
-                  <p class="mb-0">Predictive analytics for taxicab companies</p>
+                  <p class="mb-0">Predictive analytics for taxicab companies.</p>
                 </span>
               </span>
-              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+              <img class="img-fluid img-translucent" src="img/portfolio-laptop-1.jpeg" alt="Photo by Kari Shea on Unsplash">
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://github.com/dmnisson/nattracker">
+            <a class="portfolio-item" href="#natTrackerModal" data-toggle="modal" data-target="#natTrackerModal">
               <span class="caption">
                 <span class="caption-content">
                   <h2>nattracker</h2>
                   <p class="mb-0">Will be a database for therapists and therapy patients to store thoughts and behavioral responses.</p>
                 </span>
               </span>
-              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio-thinking-1.jpeg" alt="Photo by Magnus Lindvall on Unsplash">
+            </a>
+          </div>
+        </div>
+        <div class="content-section-heading text-center">
+          <h2 class="my-5">Websites David has Developed</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://yiinyolo.org/">
+              <span class="caption">
+                <span class="caption-content-black">
+                  <h2>Yolo Interfaith Immigration Network</h2>
+                  <p class="mb-0">A group of people helping Yolo County become a better place for those from all around the globe.</p>
+                </span>
+              </span>
+              <img class="img-fluid img-translucent" src="img/portfolio-3.jpg" alt="">
             </a>
           </div>
         </div>
@@ -172,6 +230,66 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
 
+	<!-- Modals -->
+	<div class="modal fade" id="natTrackerModal" tabindex="-1" role="dialog" aria-labelledby="natTrackerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>nattracker</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+				</div>
+				<div class="modal-body p-0">
+					<img class="mb-0 modal-photo" src="img/cradle.jpg">
+				</div>
+				<div class="modal-body">
+				  <p class="lead  mb-0">A database where patients and therapists will be able to write down those automatic thoughts.</p>
+				  <h4>For Patients</h4>
+                  <ul>
+                  	<li>Write down automatic thoughts, emotions, and behaviors you had in response to a situation</li>
+                  	<li>Find out which thoughts led to negative emotions and which challenges were most successful</li>
+                  </ul>
+                  <h4>For Therapists</h4>
+                  <ul>
+                  	<li>Keep track of general patterns in automatic thoughts, emotions, and behaviors</li>
+                  </ul>
+				</div>
+				<div class="modal-body photo-credit">Photo by rawpixel on Unsplash</div>
+				<div class="modal-footer">
+					<a class="btn btn-primary" href="https://github.com/dmnisson/nattracker">View Repository</a><br />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="driverTrackerModal" tabindex="-1" role="dialog" aria-labelledby="driverTrackerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>DriverTracker</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+				</div>
+				<div class="modal-body p-0">
+					<img class="mb-0 modal-photo" src="img/cab.jpg">
+				</div>
+				<div class="modal-body">
+				  <p class="lead  mb-0">Leg tracking and predictive analytics for transportation companies.</p>
+                  <ul>
+                  	<li>Keep track of where drivers have collected fares and passengers</li>
+                  	<li>Use machine learning algorithms to predict how much fare drivers can expect</li>
+                  	<li>Mobile app will allow drivers to use their GPS location to enter a new leg with just a few taps</li>
+                  </ul
+				</div>
+				<div class="modal-body photo-credit">Photo by Jace & Afsoon on Unsplash</div>
+				<div class="modal-footer">
+					<a class="btn btn-primary" href="https://github.com/dmnisson/drivertracker">View Repository</a><br />
+				</div>
+			</div>
+		</div>
+	</div>
+	
   </body>
 
 </html>

@@ -1,3 +1,15 @@
+%caption-content-base {
+	  margin: auto 2rem 2rem;
+      h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+}
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -14,15 +26,14 @@
     bottom: 0;
     z-index: 1;
     .caption-content {
+      @extend %caption-content-base;
       color: $white;
-      margin: auto 2rem 2rem;
-      h2 {
-        font-size: 0.8rem;
-        text-transform: uppercase;
-      }
+    }
+    .caption-content-black {
+      @extend %caption-content-base;
+      color: $black;
       p {
-        font-weight: 300;
-        font-size: 1.2rem;
+      	font-weight: 450;
       }
     }
   }
@@ -33,7 +44,7 @@
       -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
       -webkit-clip-path: inset(0px);
       clip-path: inset(0px);
-      .caption-content {
+      .caption-content, .caption-content-black {
         transition: opacity 0.25s;
         margin-left: 5rem;
         margin-right: 5rem;
@@ -54,7 +65,23 @@
         background-color: fade-out($primary, 0.1);
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem);
+        .caption-content-black {
+          color: $white;
+        }
       }
     }
   }
+}
+
+.modal-photo {
+	max-width: 100%;
+}
+
+.img-translucent {
+	opacity: 0.6;
+}
+
+.photo-credit {
+	font-size: 8pt;
+	font-family: Arial, Helvetica, sans-serif;
 }
