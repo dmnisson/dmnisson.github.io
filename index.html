@@ -159,12 +159,12 @@
           <div class="col-lg-6">
             <a class="portfolio-item" href="https://yiinyolo.org/">
               <span class="caption">
-                <span class="caption-content-black">
+                <span class="caption-content">
                   <h2>Yolo Interfaith Immigration Network</h2>
                   <p class="mb-0">A group of people helping Yolo County become a better place for those from all around the globe.</p>
                 </span>
               </span>
-              <img class="img-fluid img-translucent" src="img/portfolio-3.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio-globe-1.jpg" alt="Photo by Kyle Glenn on Unsplash">
             </a>
           </div>
         </div>
@@ -211,7 +211,8 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
-        <p class="text-muted small mb-0">Copyright &copy; David M. Nisson 2018</p>
+        <p class="text-muted small mb-1">Copyright &copy; David M. Nisson 2018</p>
+        <p class="text-muted small mb-0">Masthead: Photo by Sergi Kabrera on Unsplash</p>
       </div>
     </footer>
 
@@ -232,7 +233,7 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
 
 	<!-- Modals -->
 	<div class="modal fade" id="natTrackerModal" tabindex="-1" role="dialog" aria-labelledby="natTrackerModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h2>nattracker</h2>
@@ -241,7 +242,28 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
         			</button>
 				</div>
 				<div class="modal-body p-0">
-					<img class="mb-0 modal-photo" src="img/cradle.jpg">
+					<div id="nattrackerScreensCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators carousel-indicators-dark">
+							<li data-taget="#nattrackerScreensCarousel" data-slide-to="0" class="active"></li>
+							<li data-taget="#nattrackerScreensCarousel" data-slide-to="1"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/screenshot-nattracker-1.png" class="d-block w-100" alt="Welcome screen">
+							</div>
+							<div class="carousel-item">
+								<img src="img/screenshot-nattracker-2.png" class="d-block w-100" alt="Statistics view">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#nattrackerScreensCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon carousel-control-prev-icon-dark" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#nattrackerScreensCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon carousel-control-next-icon-dark" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 				</div>
 				<div class="modal-body">
 				  <p class="lead  mb-0">A database where patients and therapists will be able to write down those automatic thoughts.</p>
@@ -263,7 +285,7 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
 		</div>
 	</div>
 	<div class="modal fade" id="driverTrackerModal" tabindex="-1" role="dialog" aria-labelledby="driverTrackerModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h2>DriverTracker</h2>
@@ -272,7 +294,32 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
         			</button>
 				</div>
 				<div class="modal-body p-0">
-					<img class="mb-0 modal-photo" src="img/cab.jpg">
+					<div id="drivertrackerScreensCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#drivertrackerScreensCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#drivertrackerScreensCarousel" data-slide-to="1"></li>
+							<li data-target="#drivertrackerScreensCarousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/screenshot-drivertracker-1.png" class="d-block w-100" alt="Company Statistics">
+							</div>
+							<div class="carousel-item">
+								<img src="img/screenshot-drivertracker-2.png" class="d-block w-100" alt="Driver Details">
+							</div>
+							<div class="carousel-item">
+								<img src="img/screenshot-drivertracker-3.png" class="d-block w-100" alt="Pickup Prediction">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#drivertrackerScreensCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon carousel-control-prev-icon-dark" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#drivertrackerScreensCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon carousel-control-next-icon-dark" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 				</div>
 				<div class="modal-body">
 				  <p class="lead  mb-0">Leg tracking and predictive analytics for transportation companies.</p>
